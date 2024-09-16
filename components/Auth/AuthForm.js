@@ -81,20 +81,20 @@ function AuthForm({ isLogin, onSubmit, credentialsInvalid }) {
             isInvalid={passwordsDontMatch}
           />
         )}
-        <View style={styles.buttons}>
-          <Button onPress={submitHandler}>
-            {isLogin ? 'Log In' : 'Sign Up'}
-          </Button>
+            <View style={styles.buttons}>
+              <Button onPress={submitHandler}>
+                  {isLogin ? 'Log In' : 'Sign Up'}
+              </Button>
+            </View>
         </View>
-      </View>
     </View>
-  );
+    );
 }
 
 export default AuthForm;
 
 const styles = StyleSheet.create({
-  buttons: {
-    marginTop: 12,
-  },
+    buttons: {
+        marginTop: 12,
+    },
 });
